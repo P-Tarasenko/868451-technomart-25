@@ -10,7 +10,11 @@
   <header class="main-header">
     <div class="top-menu">
       <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип Техномарт">
-      <input type="text">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="search">Поиск:</label>
+        <input type="search" name="search" id="search">
+        <button type="submit" class="search-button">Найти</button>
+      </form>
       <a href="#">Закладки</a>
       <a href="#">Корзина</a>
       <a href="#">Оформить заказ</a>
@@ -42,24 +46,23 @@
       <ul class="info-list">
         <li class="info-list__item">
           <h3>Материалы</h3>
-          <!--Вот эти пункты либо заголовки 3 уровня либо спаны стилизованные?-->
-          <a>На любой вкус</a>
+          <a href="#">На любой вкус</a>
         </li>
         <li class="info-list__item">
           <h3>Инструмент</h3>
-          <a>На все случаи</a>
+          <a href="#">На все случаи</a>
         </li>
         <li class="info-list__item">
           <h3>Техника</h3>
-          <a>Для стройки</a>
+          <a href="#">Для стройки</a>
         </li>
         <li class="info-list__item">
           <h3>Скидки 50%</h3>
-          <a>На 350 товаров</a>
+          <a href="#">На 350 товаров</a>
         </li>
         <li class="info-list__item">
           <h3>Доставка</h3>
-          <a>Бесплатно</a>
+          <a href="#">Бесплатно</a>
         </li>
       </ul>
       <!-- Еще слайдер -->
@@ -76,6 +79,7 @@
               <img src="img/bfg-9000.jpg" width="218" height="170" alt="Bosch BFG 9000">
               <p>Перфоратор BOSCH BFG 9000</p>
               <p>32500 P.</p>
+              <p>25500 Р.</p>
             </article>
           </li>
           <li>
@@ -83,6 +87,7 @@
               <img src="img/bfg-3000.jpg" width="218" height="170" alt="Bosch BFG 3000">
               <p>Перфоратор BOSCH BFG 3000</p>
               <p>22500 P.</p>
+              <p>15500 Р.</p>
             </article>
           </li>
           <li>
@@ -90,12 +95,14 @@
               <img src="img/bfg-6000.jpg" width="218" height="170" alt="Bosch BFG 6000">
               <p>Перфоратор BOSCH BFG 6000</p>
               <p>30500 P.</p>
+              <p>25500 Р.</p>
             </article>
           </li>
           <li>
             <article>
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Bosch BFG 2000">
               <p>Перфоратор BOSCH BFG 2000</p>
+              <p>12500 Р.</p>
             </article>
           </li>
         </ul>
@@ -155,9 +162,29 @@
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, что бы сделать ваши
         покупки приятными</p>
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-        поднимая его на ваш этаж!</p>
+      <ul class="offer-slider">
+        <li class="offer-slider__item"><button type="button">Доставка</button></li>
+        <li class="offer-slider__item"><button type="button">Гарантия</button></li>
+        <li class="offer-slider__item"><button type="button">Кредит</button></li>
+      </ul>
+      <div class="offer-delivery">
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+          заработаем,
+          поднимая его на ваш этаж!</p>
+      </div>
+      <div class="offer-warranty">
+        <h2>Гарантия</h2>
+        <p>Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
+          возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж
+          восстановите как-нибудь сами.</p>
+        <!-- <p>Дом уж восстановите как-нибудь сами.</p> -->
+      </div>
+      <div class="offer-credit">
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+        <p><a href="#">Отправить заявку</a></p>
+      </div>
     </section>
     <div class="about-us">
       <section class="company">
@@ -176,7 +203,9 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.jpg" width="300" height="158" alt="Адрес офиса: Большая Конюшенная улица, дом 19">
+        <a href="img/big-map.jpg">
+          <img src="img/map.jpg" width="300" height="158" alt="Адрес офиса: Большая Конюшенная улица, дом 19">
+        </a>
         <a href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -212,7 +241,24 @@
           class="developed-color">htmlacademy.ru</a></p>
     </div>
   </footer>
-
+  <section class="modal-map">
+    <img src="img/big-map.jpg" width="940" height="446.2">
+    <button class="close-modal" type="button"></button>
+  </section>
+  <section class="modal-mail">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="modal-name">Ваше имя:</label>
+      <input type="text" name="user-name" id="modal-name" placeholder="Имя Фамилия">
+      <label for="modal-email">Ваш e-mail:</label>
+      <input type="email" name="user-email" id="modal-email" placeholder="email@example.com">
+      <label for="modal-text">Текст письма:</label>
+      <textarea name="user-comment" id="modal-text" rows="8" placeholder="В свободной форме">        
+      </textarea>
+      <!-- Почему-то не видно placeholder! -->
+      <button type="submit">Отправить</button>
+      <button class="close-modal" type="button"></button>
+    </form>
+  </section>
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
 
