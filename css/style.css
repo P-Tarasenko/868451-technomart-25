@@ -136,7 +136,8 @@ body {
   background-color: #518523;
 }
 
-.middle-menu h1 {
+.middle-menu h1,
+.catalog-middle-menu h1 {
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -345,4 +346,99 @@ body {
   color: #a9a9a9;
 
   border: 2px solid #dee3e4;
+}
+
+/* Стили каталога */
+
+.top-menu__red {
+  background-color: #ee3643;
+}
+
+.current-user {
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+}
+
+.catalog-middle-menu .catalog-user-link {
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  color: #32425c;
+}
+
+.filters {  
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters legend {
+  font-size: 17px;
+  line-height: 1.76;
+  font-weight: 700;
+}
+
+.brands-list,
+.power-list {
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.33;
+}
+
+.filters-button {
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;  
+}
+
+.perforators h2 {
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #324232;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+
+.perforators-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.06;
+  text-align: center;
+}
+
+.perforators-list h3 {
+  font-size: 18px;
+  line-height: 1.11;
+  color: #000000;
+}
+
+.price-before {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.real-price {
+  color: white;
+  background-color: #a9a9a9;
+}
+
+.logo-bg-bottom {
+  width: 220px;
+  height: 47px;
+
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo-bg-bottom:hover {
+  background-color: #ca2c37;
+}
+
+.logo-bg-bottom:active {
+  background-color: #ba2732;
 }
