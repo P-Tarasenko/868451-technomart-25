@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -16,4 +18,331 @@ a {
 
 body {
   margin: 0;
+
+  font-weight: 400;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: white;
+
+  /* background-color: aquamarine; */
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+
+
+.logo-bg {
+  width: 220px;
+  height: 47px;
+
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo-bg:hover {
+  background-color: #ca2c37;
+}
+
+.logo-bg:active {
+  background-color: #ba2732;
+}
+
+.main-header a {
+  color: white;
+}
+
+.top-menu {
+  font-size: 17px;
+  line-height: 1.06;
+
+  background-color: #293449;
+}
+
+.top-menu label {
+  font-size: 17px;
+  line-height: 1.06;
+}
+
+.top-menu input {
+  background-color: #293449;
+  border: none;
+}
+
+.search::-webkit-input-placeholder {
+  color: white;
+}
+.search::-moz-placeholder {
+  color: white;
+}
+.search:-moz-placeholder {
+  color: white;
+}
+.search:-ms-input-placeholder {
+  color: white;
+}
+
+.top-menu input:hover {
+  background-color: #212a3a;
+}
+
+.top-menu input:active {
+  background-color: #293449;
+}
+
+.top-menu input:focus {
+  background-color: white;
+}
+
+.header-link:hover {
+  background-color: #212a3a;
+}
+
+.header-link:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
+.top-menu__green {
+  background-color: #63a63e;
+}
+
+.top-menu__green:hover {
+  background-color: #5fbb2d;
+}
+
+.top-menu__green:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #518523;
+}
+
+.middle-menu h1 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.44;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #ee3643;
+}
+
+.user-menu {
+  list-style: none;
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+}
+
+.user-menu a {
+  display: block;
+
+  color: #000000;
+}
+
+.user-link:hover {
+  color: #ee3643;
+}
+
+.user-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #32425c;
+}
+
+.main-nav {
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 17px;
+  line-height: 1;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background-color: #293449;
+}
+
+.nav-item__link {
+  display: block;
+}
+
+.nav-item__link:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
+}
+
+.company {
+  text-align: left;
+  color: #000000;
+}
+
+.company h2 {
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 13px;
+  line-height: 1.85;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.company-list {
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: white;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.contacts {
+  text-align: left;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.footer-half-top {
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+
+  background-color: #32425c;
+}
+
+.footer-top-menu {
+  list-style: none;
+  color: #f1f5f7;
+}
+
+.footer-top-menu a:hover,
+.footer-bottom-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-menu a:active,
+.footer-bottom-menu a:active {
+  opacity: 0.5;
+}
+
+.footer-top-menu a {
+  color: #f1f5f7;
+}
+
+.footer-half-top address {
+  color: #f3f7f9;
+}
+
+.footer-bottom-menu {
+  list-style: none;
+  color: #ffd180;
+}
+
+.footer-bottom-menu a {
+  color: #ffd180;
+}
+
+.footer-half-bottom {
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+
+  background-color: #293449;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  color: white;
+}
+
+.color-link {
+  color: #ffd180;
+}
+
+.color-link:hover {
+  text-decoration: underline;
+}
+
+.color-link:active {
+  color: #ee3643;
+}
+
+.modal-map {
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+}
+
+.modal-mail label {
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+}
+
+.modal-mail input,
+.modal-mail textarea {
+  font-size: 13px;
+  line-height: 1.38;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: left;
+  color: #a9a9a9;
+
+  border: 2px solid #dee3e4;
 }
