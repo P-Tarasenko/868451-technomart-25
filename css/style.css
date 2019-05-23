@@ -104,10 +104,6 @@ body {
   background-color: #212a3a;
 }
 
-.top-menu input:active {
-  background-color: #293449;
-}
-
 .top-menu input:focus {
   background-color: white;
 }
@@ -247,6 +243,15 @@ body {
   background-color: #ba2732;
 }
 
+.brands-cards img:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-cards img:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
 .contacts {
   text-align: left;
   color: #000000;
@@ -348,6 +353,21 @@ body {
   border: 2px solid #dee3e4;
 }
 
+.modal-mail input:hover,
+.modal-mail textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.modal-mail input:focus,
+.modal-mail textarea:focus {
+  border-color: #ee3643;
+  outline: none;
+}
+
+.modal-bg {
+  background-color: #f1f1f1;
+}
+
 /* Стили каталога */
 
 .top-menu__red {
@@ -362,23 +382,33 @@ body {
 }
 
 .catalog-middle-menu .catalog-user-link {
-  text-decoration: underline;
   font-size: 16px;
   line-height: 1.13;
   text-align: left;
   color: #32425c;
+  text-decoration: underline;
 }
 
-.filters {  
+.breadcrumbs,
+.breadcrumbs a {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.38;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: left;
+  color: #000000;
+}
+
+.filters {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .filters legend {
+  font-weight: 700;
   font-size: 17px;
   line-height: 1.76;
-  font-weight: 700;
 }
 
 .brands-list,
@@ -391,7 +421,7 @@ body {
 .filters-button {
   font-size: 13px;
   line-height: 1.38;
-  text-align: center;  
+  text-align: center;
 }
 
 .perforators h2 {
@@ -400,14 +430,15 @@ body {
   text-align: left;
   color: #324232;
   text-transform: uppercase;
+
   background-color: #f2f6f8;
 }
 
 .perforators-list {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 17px;
   font-weight: 700;
+  font-size: 17px;
   line-height: 1.06;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
 }
 
@@ -424,6 +455,7 @@ body {
 
 .real-price {
   color: white;
+
   background-color: #a9a9a9;
 }
 
@@ -441,4 +473,22 @@ body {
 
 .logo-bg-bottom:active {
   background-color: #ba2732;
+}
+
+.catalog-modal h2 {
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-modal__button {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-modal__bg {
+  background-color: #f7f3ec;
 }
