@@ -153,9 +153,15 @@ body {
 
 .middle-menu {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .middle-wrap {
+  width: 300px;
+}
+
+.header-wrapper {
   width: 300px;
 }
 
@@ -166,7 +172,8 @@ body {
   font-size: 16px;
   line-height: 1.44;
   color: #ee3643;
-  width: 220px;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .header-phone {
@@ -247,6 +254,8 @@ body {
 .company {
   text-align: left;
   color: #000000;
+  width: 540px;
+  margin-right: auto;
 }
 
 .company h2 {
@@ -293,9 +302,14 @@ body {
   opacity: 0.3;
 }
 
+.about-us {
+  display: flex;
+}
+
 .contacts {
   text-align: left;
   color: #000000;
+  width: 300px;
 }
 
 .contacts h2 {
