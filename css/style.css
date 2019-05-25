@@ -26,6 +26,10 @@ body {
   /* background-color: aquamarine; */
 }
 
+/* body > * {
+  background-color: rgb(240, 112, 112);
+} */
+
 .visually-hidden {
   position: absolute;
 
@@ -44,8 +48,15 @@ body {
           clip-path: inset(100%);
 }
 
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f4f7f9;
+  width: 100%;
 }
 
 
@@ -71,7 +82,14 @@ body {
   color: white;
 }
 
+.top-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .top-menu {
+  width: 100%;  
   font-size: 17px;
   line-height: 1.06;
 
@@ -133,6 +151,14 @@ body {
   background-color: #518523;
 }
 
+.middle-menu {
+  display: flex;
+}
+
+.middle-wrap {
+  width: 300px;
+}
+
 .middle-menu h1,
 .catalog-middle-menu h1 {
   font-style: italic;
@@ -140,21 +166,31 @@ body {
   font-size: 16px;
   line-height: 1.44;
   color: #ee3643;
+  width: 220px;
 }
 
 .header-phone {
   font-size: 21px;
   line-height: 1;
-  text-align: left;
+  text-align: center;
   color: #ee3643;
 }
 
 .user-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
   list-style: none;
   font-size: 21px;
   line-height: 1;
   text-align: left;
   color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header > .container {
+  padding-bottom: 60px;
 }
 
 .user-menu a {
@@ -184,10 +220,14 @@ body {
 }
 
 .nav-list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
   font-size: 17px;
   line-height: 1;
   text-align: left;
+  margin: 0;
+  padding: 20px 0;  
 }
 
 .nav-item:hover {
