@@ -103,7 +103,17 @@ body {
 
 .header-form {
   width: 270px;
-  padding-left: 48px;
+  /* padding-left: 48px; */
+  position: relative;
+}
+
+.header-svg {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  opacity: 0.3;
 }
 
 .top-menu label {
@@ -115,7 +125,9 @@ body {
   background-color: #293449;
   border: none;
   width: 100%;
-  margin-top: 10px; 
+  /* margin-top: 10px; */
+  padding: 11px 0 12px;
+  padding-left: 48px;   
 }
 
 .header-link,
