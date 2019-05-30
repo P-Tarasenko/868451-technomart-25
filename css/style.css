@@ -57,8 +57,8 @@ body {
 .main-header {
   width: 100%;
 
-  /* background-color: #f4f7f9; */
-  background-color: rgb(102, 233, 102);
+  background-color: #f4f7f9;
+  /* background-color: rgb(102, 233, 102); */
 }
 
 
@@ -121,13 +121,13 @@ body {
   line-height: 1.06;
 }
 
-.top-menu input {
+.search {
   background-color: #293449;
   border: none;
   width: 100%;
   /* margin-top: 10px; */
-  padding: 11px 0 12px;
-  padding-left: 48px;   
+  padding: 11px 10px 12px 48px;
+  /* padding-left: 48px;   */
 }
 
 .header-link,
@@ -191,11 +191,23 @@ body {
   color: white;
 }
 
-.top-menu input:hover {
+.search:hover {
   background-color: #212a3a;
 }
 
-.top-menu input:focus {
+.header-form:hover .header-svg {
+  opacity: 1;
+}
+
+.search:focus + .header-svg path {
+  fill: #ee3643;
+}
+
+.search:focus + .header-svg {
+  opacity: 1;
+}
+
+.search:focus {
   background-color: white;
 }
 
