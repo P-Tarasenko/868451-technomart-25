@@ -86,8 +86,8 @@ body {
 
 .top-menu .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
 .top-menu {
@@ -99,6 +99,11 @@ body {
   background-color: #293449;
 }
 
+.header-form {
+  width: 270px;
+  padding-left: 48px;
+}
+
 .top-menu label {
   font-size: 17px;
   line-height: 1.06;
@@ -107,6 +112,56 @@ body {
 .top-menu input {
   background-color: #293449;
   border: none;
+  width: 100%;
+  margin-top: 10px; 
+}
+
+.header-link,
+.top-menu__green {
+  width: 150px;
+  text-align: center;
+  padding-top: 12px;
+  position: relative;
+}
+
+.header-link {
+  padding-left: 16px;
+}
+
+.bookmark::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("/img/icon-bookmark.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 12px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.basket::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("/img/icon-cart.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 12px;
+  left: 18px;
+  opacity: 0.3;
+}
+
+.bookmark:hover::before,
+.basket:hover::before {
+  opacity: 1;
+}
+
+.bookmark:active::before,
+.basket:active::before {
+  opacity: 0.5;
 }
 
 .search::-webkit-input-placeholder {
