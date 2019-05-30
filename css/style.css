@@ -57,7 +57,8 @@ body {
 .main-header {
   width: 100%;
 
-  background-color: #f4f7f9;
+  /* background-color: #f4f7f9; */
+  background-color: rgb(102, 233, 102);
 }
 
 
@@ -97,6 +98,7 @@ body {
   line-height: 1.06;
 
   background-color: #293449;
+  margin-bottom: 43px;  
 }
 
 .header-form {
@@ -213,40 +215,67 @@ body {
 .catalog-middle-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  margin-bottom: 41px;
 }
 
 .middle-wrap {
   width: 300px;
+  padding: 0 15px;
 }
 
 .header-wrapper {
-  width: 300px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 53px;
 }
+
+/* .header-wrapper h1 {
+  padding-top: 5px;
+  margin-left: 70px;
+} */
 
 .middle-menu h1,
 .catalog-middle-menu h1 {
-  width: 200px;
-  margin: 0 auto;
+  /* width: 196px; */
+  margin: 0;
 
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.44;
   color: #ee3643;
+  text-align: left;
 }
 
 .header-phone {
   font-size: 21px;
   line-height: 1;
-  text-align: center;
+  /* text-align: center; */
   color: #ee3643;
+  border: 3px solid white;
+  padding: 12px 0;
+  padding-left: 70px;
+  margin: 0;
+  position: relative;
+}
+
+.header-phone::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  background-image: url(/img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 13px;
+  left: 12px;
 }
 
 .user-menu {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 280px;
   margin: 0;
   padding: 0;
 
@@ -255,6 +284,11 @@ body {
   line-height: 1;
   text-align: left;
   color: #000000;
+  align-items: flex-start;
+}
+
+.user-menu li {
+  background-color: white;
 }
 
 .main-header > .container {
@@ -264,7 +298,42 @@ body {
 .user-menu a {
   display: block;
 
-  color: #000000;
+  color: #000000;  
+}
+
+.enter {
+  padding: 13px 25px 13px 47px;
+  position: relative;
+}
+
+.enter-svg {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.user-link:hover .enter-svg path {
+  fill: #32425C;
+}
+
+.user-link:active .enter-svg path {
+  fill: #c5c5c5;
+}
+
+/* .enter::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  background-image: url("/img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 15px;
+  left: 13px;
+} */
+
+.registration {
+  padding: 14px 25px 11px 25px;
 }
 
 .user-link:hover {
@@ -280,6 +349,7 @@ body {
   line-height: 1.71;
   text-align: center;
   color: #32425c;
+  margin: 0;
 }
 
 .main-nav {
@@ -289,14 +359,30 @@ body {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
+  /* padding: 21px 23px 21px 22px; */
 
   list-style: none;
   font-size: 17px;
   line-height: 1;
-  text-align: left;
+  /* text-align: left; */
+}
+
+.first,
+.last{
+  flex-grow: 1;
+}
+
+.first {
+  text-align: right;
+}
+
+.nav-item a {
+  display: block; 
+  padding: 20px 31px 23px;
 }
 
 .nav-item:hover {
