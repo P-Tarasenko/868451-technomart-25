@@ -235,6 +235,10 @@ body {
   background-color: #518523;
 }
 
+.top-menu__red {
+  padding-left: 23px;
+}
+
 .middle-menu,
 .catalog-middle-menu {
   display: flex;
