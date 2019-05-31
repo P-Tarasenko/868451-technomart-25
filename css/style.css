@@ -439,6 +439,7 @@ body {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .desc {
@@ -447,9 +448,43 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.company-desc-first {
+  margin-bottom: 25px;
+}
+
+.company-desc-second {
+  width: 390px;
+  margin-bottom: 20px;
+}
+
+.contacts-desc {
+  width: 180px;
+  margin-bottom: 33px;
+}
+
 .company-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+  list-style: none;
   font-size: 18px;
   line-height: 1.11;
+  margin-bottom: 14px;
+}
+
+.company-list li {
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.company-list li::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  position: absolute;
+  top: 10px;
+  left: -36px;
 }
 
 .button {
@@ -457,6 +492,9 @@ body {
   line-height: 1.29;
   text-align: center;
   color: white;
+  padding: 11px 0 9px 0;
+  text-transform: uppercase;
+  border-radius: 2px;
 
   background-color: #ee3643;
   border: none;
@@ -494,6 +532,26 @@ body {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contacts-link {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.contacts-button {
+  display: block;
+  padding-left: 5px;
+}
+
+.company-button {
+  display: block;
+  width: 220px;
+}
+
+.main-footer {
+  margin-top: 86px;
 }
 
 .footer-half-top {
@@ -507,12 +565,14 @@ body {
 
 .footer-top-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 550px;
+  width: 548px;
   margin: 0;
   margin-left: auto;
   padding: 0;
+  margin-top: 1px;
 
   list-style: none;
   color: #f1f5f7;
@@ -538,6 +598,7 @@ body {
 
 .footer-half-top address {
   width: 380px;
+  padding-left: 3px;
 
   font-style: normal;
   color: #f3f7f9;
@@ -545,10 +606,12 @@ body {
 
 .footer-middle-line {
   display: flex;
+  padding-bottom: 50px;
 }
 
 .footer-bottom-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 540px;
   margin: 0;
@@ -581,6 +644,7 @@ body {
 
 .copyright {
   width: 240px;
+  padding: 22px 0 17px 2px;
 }
 
 .social-list {
@@ -600,6 +664,11 @@ body {
 .feedback-wrapper {
   display: flex;
   width: 300px;
+  padding-top: 22px;
+}
+
+.developed {
+  padding-left: 51px;
 }
 
 .color-link {
@@ -754,12 +823,14 @@ body {
 }
 
 .logo-bg-bottom {
-  /* display: block; */
+  display: block;
   width: 220px;
-  height: 68px;
+  height: 63px;
+  padding: 20px 41px 25px;
+  margin-bottom: 33px;
 
   background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 0 0 rgb(181, 41, 51);
 }
 
 .logo-bg-bottom:hover {
