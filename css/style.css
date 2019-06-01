@@ -981,6 +981,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+  width: 220px;
 }
 
 .filters legend {
@@ -1000,6 +1001,15 @@ body {
   font-size: 13px;
   line-height: 1.38;
   text-align: center;
+}
+
+.perforators-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-wrapper {
+  width: 700px;
 }
 
 .perforators h2 {
@@ -1023,6 +1033,21 @@ body {
   line-height: 1.06;
   font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  padding: 0;
+}
+.perforators-list li {
+  width: 220px;
+  /* min-height: 318px; */
+  border: solid 1px #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.perforators-list li:nth-child(3n+2),
+.perforators-list li:nth-child(3n+3) {
+  margin-left: 20px;
 }
 
 .perforators-list h3 {
