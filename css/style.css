@@ -1054,17 +1054,39 @@ body {
   font-size: 18px;
   line-height: 1.11;
   color: #000000;
+  margin: 0;
+  width: 160px;
+  /* align-self: center; */
+  margin-top: 9px;
+  margin-bottom: 14px;
+}
+
+.perforators-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  min-height: 316px;
 }
 
 .price-before {
   color: #999999;
   text-decoration: line-through;
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .real-price {
+  width: 140px;
   color: white;
+  padding: 10px;
+  margin: auto 0 20px 5px;
+  /* margin-top: auto; */
 
-  background-color: #a9a9a9;
+  /* background-color: #ee3643; */
+  background-image: url(/img/red-button.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .logo-bg-bottom {
