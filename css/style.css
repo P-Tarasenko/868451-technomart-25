@@ -1037,12 +1037,47 @@ body {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   padding: 0;
+  list-style: none;
 }
 .perforators-list li {
   width: 220px;
   /* min-height: 318px; */
   border: solid 1px #e5e5e5;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.new::before {
+  content: "";
+  width: 60px;
+  height: 59px;
+  position: absolute;
+  background-image: url(/img/new-flag.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: -1px;
+  right: -1px;
+  z-index: 2;
+}
+
+.actions {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 170px;
+  /* padding: 40px 0; */
+  background-color: white;
+  z-index: 1;
+}
+
+.perforators-list li:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.perforators-list li:hover .actions {
+  display: block;
 }
 
 .perforators-list li:nth-child(3n+2),
@@ -1087,6 +1122,24 @@ body {
   background-image: url(/img/red-button.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.actions-buy,
+.actions-bookmark {
+  display: block;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  width: 135px;
+  height: 38px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+}
+
+.pagination-list {
+  list-style: none;
 }
 
 .logo-bg-bottom {
