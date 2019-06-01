@@ -93,26 +93,29 @@ body {
 
 .top-menu {
   width: 100%;
+  margin-bottom: 43px;
 
   font-size: 17px;
   line-height: 1.06;
 
   background-color: #293449;
-  margin-bottom: 43px;  
 }
 
 .header-form {
-  width: 270px;
   /* padding-left: 48px; */
   position: relative;
+
+  width: 270px;
 }
 
 .header-svg {
-  width: 17px;
-  height: 17px;
   position: absolute;
   top: 12px;
   left: 17px;
+
+  width: 17px;
+  height: 17px;
+
   opacity: 0.3;
 }
 
@@ -122,20 +125,23 @@ body {
 }
 
 .search {
-  background-color: #293449;
-  border: none;
   width: 100%;
   /* margin-top: 10px; */
   padding: 11px 10px 12px 48px;
+
+  background-color: #293449;
+  border: none;
   /* padding-left: 48px;   */
 }
 
 .header-link,
 .top-menu__green {
-  width: 150px;
-  text-align: center;
-  padding-top: 12px;
   position: relative;
+
+  width: 150px;
+  padding-top: 12px;
+
+  text-align: center;
 }
 
 .header-link {
@@ -144,27 +150,31 @@ body {
 
 .bookmark::before {
   content: "";
-  width: 16px;
-  height: 16px;
   position: absolute;
-  background-image: url("/img/icon-bookmark.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
   top: 12px;
   left: 17px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("/img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.3;
 }
 
 .basket::before {
   content: "";
-  width: 16px;
-  height: 16px;
   position: absolute;
-  background-image: url("/img/icon-cart.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
   top: 12px;
   left: 18px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("/img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   opacity: 0.3;
 }
 
@@ -272,37 +282,43 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.44;
-  color: #ee3643;
   text-align: left;
+  color: #ee3643;
 }
 
 .header-phone {
+  position: relative;
+
+  margin: 0;
+  padding: 12px 0;
+  padding-left: 70px;
+
   font-size: 21px;
   line-height: 1;
   /* text-align: center; */
   color: #ee3643;
+
   border: 3px solid white;
-  padding: 12px 0;
-  padding-left: 70px;
-  margin: 0;
-  position: relative;
 }
 
 .header-phone::before {
   content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+
   width: 19px;
   height: 19px;
-  position: absolute;
+
   background-image: url(/img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  top: 13px;
-  left: 12px;
 }
 
 .user-menu {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 280px;
   margin: 0;
   padding: 0;
@@ -313,7 +329,6 @@ body {
   line-height: 1;
   text-align: left;
   color: #000000;
-  align-items: flex-start;
 }
 
 .user-menu li {
@@ -327,12 +342,13 @@ body {
 .user-menu a {
   display: block;
 
-  color: #000000;  
+  color: #000000;
 }
 
 .enter {
-  padding: 13px 25px 13px 47px;
   position: relative;
+
+  padding: 13px 25px 13px 47px;
 }
 
 .enter-svg {
@@ -342,7 +358,7 @@ body {
 }
 
 .user-link:hover .enter-svg path {
-  fill: #32425C;
+  fill: #32425c;
 }
 
 .user-link:active .enter-svg path {
@@ -374,11 +390,12 @@ body {
 }
 
 .header-address {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
   color: #32425c;
-  margin: 0;
 }
 
 .main-nav {
@@ -402,7 +419,7 @@ body {
 }
 
 .first,
-.last{
+.last {
   flex-grow: 1;
 }
 
@@ -411,7 +428,7 @@ body {
 }
 
 .nav-item a {
-  display: block; 
+  display: block;
   padding: 20px 31px 23px;
 }
 
@@ -438,10 +455,10 @@ body {
 }
 
 .company h2 {
+  font-weight: 400;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .desc {
@@ -466,40 +483,45 @@ body {
 
 .company-list {
   margin: 0;
+  margin-bottom: 14px;
   padding: 0;
   padding-left: 36px;
+
   list-style: none;
   font-size: 18px;
   line-height: 1.11;
-  margin-bottom: 14px;
 }
 
 .company-list li {
-  padding-bottom: 22px;
   position: relative;
+
+  padding-bottom: 22px;
 }
 
 .company-list li::before {
   content: "";
-  width: 25px;
-  height: 2px;
-  background-color: #ee3643;
   position: absolute;
   top: 10px;
   left: -36px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
 }
 
 .button {
+  padding: 11px 0 9px 0;
+
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: white;
-  padding: 11px 0 9px 0;
   text-transform: uppercase;
-  border-radius: 2px;
 
   background-color: #ee3643;
   border: none;
+  border-radius: 2px;
 }
 
 .button:hover {
@@ -531,10 +553,10 @@ body {
 }
 
 .contacts h2 {
+  font-weight: 400;
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .contacts-link {
@@ -572,9 +594,9 @@ body {
   align-items: center;
   width: 548px;
   margin: 0;
+  margin-top: 1px;
   margin-left: auto;
   padding: 0;
-  margin-top: 1px;
 
   list-style: none;
   color: #f1f5f7;
@@ -655,20 +677,22 @@ body {
   align-items: center;
   /* width: 150px; */
   margin: 0;
-  padding: 0;
-  margin-left: 31px;
   margin-top: 5px;
+  margin-left: 31px;
+  padding: 0;
 
   list-style: none;
 }
 
 .social-list a {
-  color: white;
+  display: block;
   width: 42px;
   height: 42px;
+
+  color: white;
+
   background-color: #212a3a;
-  display: block;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 .social-item {
@@ -863,8 +887,8 @@ body {
   display: block;
   width: 220px;
   height: 63px;
-  padding: 20px 41px 25px;
   margin-bottom: 33px;
+  padding: 20px 41px 25px;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 rgb(181, 41, 51);
