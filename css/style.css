@@ -1138,6 +1138,95 @@ body {
   width: 700px;
 }
 
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f3ec;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.sort-heading {  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+  padding-left: 20px;
+  margin-right: 139px;
+}
+
+.sort-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+  padding-right: 16px;
+}
+
+.sort-price {
+  margin-right: 70px;
+}
+
+.sort-type {
+  margin-right: 66px;
+}
+
+.sort-functional {
+  margin-right: 46px;
+}
+
+.arrow-top {
+  padding-right: 21px;
+}
+
+
+.sort-link {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: #000000;
+  text-align: left;  
+  border-bottom: 1px dotted #ee3643;
+}
+
+.text-opacity {
+  opacity: 0.3;
+}
+
+.sort-active {
+  color: #ee3643;
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sort-link:hover .text-opacity {
+  opacity: 1;
+}
+
+.sort-link:hover {
+  border-bottom: 1px solid #ee3643;
+  color: #000000;
+}
+
+.sort .sort-arrow {
+  border-bottom: none;
+}
+
+.sort-arrow:hover path {
+ fill: #231F20;
+}
+
+.sort-arrow-active path {
+  fill: #ee3643;
+}
+
 .perforators h2 {
   margin: 0;
   margin-top: 21px;

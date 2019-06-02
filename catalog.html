@@ -66,7 +66,7 @@
       </div>
       <nav class="main-nav">
         <ul class="nav-list">
-          <li class="nav-item first"><a class="nav-item__link">Главная</a></li>
+          <li class="nav-item first"><a href="/index.html" class="nav-item__link">Главная</a></li>
           <li class="nav-item"><a class="nav-item__link" href="#">Компания</a></li>
           <li class="nav-item"><a class="nav-item__link" href="catalog.html">Каталог</a></li>
           <li class="nav-item"><a class="nav-item__link" href="#">Новости</a></li>
@@ -139,6 +139,24 @@
           </section>
           <!-- Тут фильтры и карточки -->
           <div class="list-wrapper">
+            <div class="sort">
+              <h3 class="sort-heading">Сортировка:</h3>
+              <div class="sort-wrapper">
+                <a class="sort-price sort-link sort-active" href="">По цене</a>
+                <a class="sort-type sort-link" href=""><span class="text-opacity">По типу</span></a>
+                <a class="sort-functional sort-link" href=""><span class="text-opacity">По функционалу</span></a>
+                <a class="sort-arrow arrow-top sort-arrow-active" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 0L0 10h11z" /></svg>
+                  <span class="visually-hidden">По возрастанию цены</span>
+                </a>
+                <a class="sort-arrow arrow-bottom" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 10L0 0h11" /></svg>
+                  <span class="visually-hidden">По убыванию цены</span>
+                </a>
+              </div>
+            </div>
             <ul class="perforators-list">
               <li>
                 <div class="actions">
