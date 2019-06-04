@@ -157,7 +157,7 @@ body {
   width: 16px;
   height: 16px;
 
-  background-image: url("/img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -172,7 +172,7 @@ body {
   width: 16px;
   height: 16px;
 
-  background-image: url("/img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -324,7 +324,7 @@ body {
   width: 19px;
   height: 19px;
 
-  background-image: url(/img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -392,7 +392,7 @@ body {
   width: 20px;
   height: 17px;
   position: absolute;
-  background-image: url("/img/icon-login.svg");
+  background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 15px;
@@ -731,19 +731,19 @@ body {
 }
 
 .social-vk {
-  background-image: url(/img/icon-vk.svg);
+  background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-fb {
-  background-image: url(/img/icon-fb.svg);
+  background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .social-inst {
-  background-image: url(/img/icon-insta.svg);
+  background-image: url("../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -871,7 +871,7 @@ body {
   width: 20px;
   height: 18px;
   position: absolute;
-  background-image: url(/img/icon-user.svg);
+  background-image: url("../img/icon-user.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: 14px;
@@ -883,7 +883,7 @@ body {
   width: 20px;
   height: 17px;
   position: absolute;
-  background-image: url(/img/icon-logout.svg);
+  background-image: url("../img/icon-logout.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: 14px;
@@ -962,7 +962,7 @@ body {
   width: 8px;
   height: 12px;
 
-  background-image: url(/img/icon-right-small.svg);
+  background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -976,7 +976,7 @@ body {
   width: 14px;
   height: 12px;
 
-  background-image: url(/img/icon-home.svg);
+  background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1091,7 +1091,7 @@ body {
   width: 23px;
   height: 23px;
 
-  background-image: url(/img/checkbox-off-black.svg);
+  background-image: url("../img/checkbox-off-black.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -1100,7 +1100,7 @@ body {
 .brands-input:checked + .brands-label::before {
   width: 27px;
 
-  background-image: url(/img/checkbox-on-black.svg);
+  background-image: url("../img/checkbox-on-black.svg");
 }
 
 .brands-label:hover::before {
@@ -1129,14 +1129,14 @@ body {
   width: 25px;
   height: 25px;
 
-  background-image: url(/img/radio-off-black.svg);
+  background-image: url("../img/radio-off-black.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
 
 .power-input:checked + .power-label::before {
-  background-image: url(/img/radio-on-black.svg);
+  background-image: url("../img/radio-on-black.svg");
 }
 
 .power-label:hover::before {
@@ -1314,7 +1314,7 @@ body {
   width: 60px;
   height: 59px;
 
-  background-image: url(/img/new-flag.png);
+  background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1383,7 +1383,7 @@ body {
   /* margin-top: auto; */
   /* background-color: #ee3643; */
 
-  background-image: url(/img/red-button.svg);
+  background-image: url("../img/red-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1428,7 +1428,7 @@ body {
   width: 15px;
   height: 15px;
 
-  background-image: url(/img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -1565,7 +1565,7 @@ body {
 
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
-  display: none;
+  /* display: none; */
 }
 
 .catalog-modal h2 {
@@ -1595,7 +1595,7 @@ body {
   height: 66px;
   margin-top: -33px;
 
-  background-image: url(/img/icon-mark.svg);
+  background-image: url("../img/icon-mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1645,7 +1645,7 @@ body {
   height: 21px;
 
   background-color: transparent;
-  background-image: url(/img/icon-close.svg);
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
