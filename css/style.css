@@ -1565,7 +1565,7 @@ body {
 
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
-  /* display: none; */
+  display: none;
 }
 
 .catalog-modal h2 {
