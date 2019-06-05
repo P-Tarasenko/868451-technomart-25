@@ -470,6 +470,10 @@ body {
   background-color: #1d2739;
 }
 
+.info {
+  margin-bottom: 53px;
+}
+
 .info-blocks {
   display: flex;
   flex-wrap: wrap;  
@@ -725,17 +729,8 @@ z-index: 3;
   background-color: #ee3643;
 }
 
-/* .info-slider input {
-  position: absolute;
-  margin-left: -200px;
-}
-.info-slider input:last-of-type {
-  position: absolute;
-  margin-left: -150px;
-} */
 
-.slider-desc {
-  /* font-family: "PT Sans", Arial, sans-serif; */
+.slider-desc {  
   font-size: 18px;  
   line-height: 1.33;  
   text-align: left;
@@ -755,6 +750,60 @@ z-index: 3;
   margin: 0;
   padding-top: 23px;
   padding-left: 24px;
+}
+
+.heading-line {
+  background-color: #f9f5f0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 29px;
+  padding-right: 24px;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.heading-line h2 {
+  font-size: 30px;
+  font-weight: normal;  
+  line-height: 1;  
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading-line a {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-top: 10px;
+  min-width: 253px;
+}
+
+.brands-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0; */
+  margin: 0;
+}
+
+.brands-item {
+  width: 220px;
+  height: 145px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  margin-right: 20px;
+  display: flex;  
+}
+
+.brands-item a {
+  margin: auto;
+}
+
+.brands-item:nth-child(4n+4) {
+  margin-right: 0;
 }
 
 .company {
@@ -843,11 +892,11 @@ z-index: 3;
   background-color: #ba2732;
 }
 
-.brands-cards img:hover {
+.brands-item:hover {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brands-cards img:active {
+.brands-item:active {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
@@ -1359,7 +1408,6 @@ z-index: 3;
   line-height: 1.33;
 }
 
-.brands-list,
 .power-list {
   padding-left: 33px;
 }
@@ -1633,6 +1681,24 @@ z-index: 3;
 .perforators-list li:nth-child(3n+2),
 .perforators-list li:nth-child(3n+3) {
   margin-left: 20px;
+}
+
+.goods-list li:nth-child(3n+2),
+.goods-list li:nth-child(3n+3) {
+  margin-left: 0;
+}
+
+.goods-list li {
+  margin-right: 20px;
+}
+
+.goods-list li:last-child {
+  margin-right: 0;
+}
+
+.goods-list {
+  margin: 0;
+  list-style: none;
 }
 
 .perforators-list h3 {
