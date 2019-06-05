@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header index-header">
     <div class="top-menu">
       <div class="container">
         <a href="index.html" class="logo-bg">
@@ -23,7 +24,7 @@
           <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path fill="#ffffff"
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
-            </svg>
+          </svg>
           <button type="submit" class="search-button visually-hidden">Найти</button>
         </form>
         <a class="header-link bookmark" href="#">Закладки: 0</a>
@@ -68,31 +69,50 @@
   </header>
 
   <main>
-    <section class="info">
+    <section class="info container">
       <!-- Тут нужно будет делать плитки не списком, так как в одном контейнере и на одном уровне с ними будет слайдер, нужен многострочный флексбокс -->
       <h2 class="visually-hidden">Наши предложения:</h2>
-      <ul class="info-list">
-        <li class="info-list__item">
+      <div class="info-blocks">
+        <div class="info-block__item item-materials">
           <h3>Материалы</h3>
           <a href="#">На любой вкус</a>
-        </li>
-        <li class="info-list__item">
+        </div>
+        <div class="info-block__item item-tooling">
           <h3>Инструмент</h3>
           <a href="#">На все случаи</a>
-        </li>
-        <li class="info-list__item">
+        </div>
+        <div class="info-block__item item-machine">
           <h3>Техника</h3>
           <a href="#">Для стройки</a>
-        </li>
-        <li class="info-list__item">
-          <h3>Скидки 50%</h3>
-          <a href="#">На 350 товаров</a>
-        </li>
-        <li class="info-list__item">
-          <h3>Доставка</h3>
-          <a href="#">Бесплатно</a>
-        </li>
-      </ul>
+        </div>
+        <div class="slider-wrapper">
+          <div class="info-slider">
+            <input class="visually-hidden drill-input" type="radio" name="toggle" id="first-slide" checked>
+            <label class="first-label" for="first-slide"></label>
+            <input class="visually-hidden perf-input" type="radio" name="toggle" id="second-slide">
+            <label class="second-label" for="second-slide"></label>
+            <div class="slider-image slider-drill">
+              <h4 class="slider-heading">Дрели</h4>
+              <p class="slider-desc">Соседям на радость!</p>
+            </div>
+            <div class="slider-image slider-perf">
+              <h4 class="slider-heading">Перфораторы</h4>
+              <p class="slider-desc">Настоящие мужские игрушки</p>
+            </div>
+            <a class="button slider-button" href="#">Открыть каталог</a>
+          </div>
+          <div class="item-wrapper">
+            <div class="info-block__item item-sale">
+              <h3>Скидки 50%</h3>
+              <a href="#">На 350 товаров</a>
+            </div>
+            <div class="info-block__item item-delivery">
+              <h3>Доставка</h3>
+              <a href="#">Бесплатно</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Еще слайдер -->
     </section>
     <section class="goods">
@@ -271,7 +291,8 @@
         <ul class="social-list">
           <li class="social-item"><a class="social-vk" href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
           <li class="social-item"><a class="social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="social-item"><a class="social-inst" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li class="social-item"><a class="social-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
         </ul>
         <div class="feedback-wrapper">
           <p class="feedback">Обратная связь: <a class="color-link" href="#">mail@htmlacademy.ru</a>
