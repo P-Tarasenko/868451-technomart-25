@@ -824,7 +824,7 @@ body {
 .brands-list {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0; */
+  padding: 0;
   margin: 0;
 
   list-style: none;
@@ -835,6 +835,7 @@ body {
   width: 220px;
   height: 145px;
   margin-right: 20px;
+  margin-bottom: 20px;
 
   background-color: white;
   border: 1px solid #eaeaea;
@@ -1440,7 +1441,7 @@ body {
   line-height: 1.76;
 }
 
-.brands-list,
+.catalog-brands-list,
 .power-list {
   margin: 0;
   padding: 0;
@@ -1450,11 +1451,12 @@ body {
   line-height: 1.33;
 }
 
-.power-list {
+.power-list,
+.catalog-brands-list {
   padding-left: 33px;
 }
 
-.brands-list li,
+.catalog-brands-list li,
 .power-list li {
   position: relative;
 
