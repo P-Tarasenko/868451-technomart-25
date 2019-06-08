@@ -246,7 +246,8 @@
             </div>
             <div class="offer-slide offer-warranty">
               <h3>Гарантия</h3>
-              <p class="offer-desc warranty-desc">Если купленный у нас товар поломается или заискрит,<br> а так же в случае
+              <p class="offer-desc warranty-desc">Если купленный у нас товар поломается или заискрит,<br> а так же в
+                случае
                 пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на
                 новый.<br>Дом
@@ -260,31 +261,6 @@
               <p><a href="#" class="credit-button button">Отправить заявку</a></p>
             </div>
           </div>
-
-          <!-- <div class="offer-slide offer-delivery">
-              <h3>Доставка</h3>
-              <p class="offer-desc delivery-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                совершенно
-                бесплатно! Ведь мы неплохо
-                заработаем,
-                поднимая его на ваш этаж!</p>
-            </div>
-            <div class="offer-slide offer-warranty">
-              <h3>Гарантия</h3>
-              <p class="offer-desc warranty-desc">Если купленный у нас товар поломается или заискрит, а так же в случае
-                пожара, спровоцированного его
-                возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на
-                новый.<br>Дом
-                уж
-                восстановите как-нибудь сами.</p>
-            </div>
-            <div class="offer-slide offer-credit">
-              <h3>Кредит</h3>
-              <p class="offer-desc credit-desc">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
-                помощь.</p>
-              <p><a href="#">Отправить заявку</a></p>
-            </div> -->
-
         </div>
       </div>
     </section>
@@ -365,16 +341,21 @@
   </section>
   <section class="modal-mail">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="modal-name">Ваше имя:</label>
-      <input type="text" name="user-name" id="modal-name" placeholder="Имя Фамилия">
-      <label for="modal-email">Ваш e-mail:</label>
-      <input type="email" name="user-email" id="modal-email" placeholder="email@example.com">
-      <label for="modal-text">Текст письма:</label>
-      <textarea name="user-comment" id="modal-text" rows="8" placeholder="В свободной форме"></textarea>
-      <button class="close-modal" type="button"></button>
+    <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="mail-form-wrapper">
+        <label for="modal-name">Ваше имя:
+          <input type="text" name="user-name" id="modal-name" placeholder="Имя Фамилия">
+        </label>
+        <label for="modal-email">Ваш e-mail:
+          <input type="email" name="user-email" id="modal-email" placeholder="email@example.com">
+        </label>
+        <label class="text-area-label" for="modal-text">Текст письма:
+          <textarea name="user-comment" id="modal-text" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="close-modal" type="button"></button>
+      </div>
       <div class="modal-bg">
-        <button class="button" type="submit">Отправить</button>
+        <button class="button mail-button" type="submit">Отправить</button>
       </div>
     </form>
   </section>
