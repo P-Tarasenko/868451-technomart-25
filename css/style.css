@@ -1438,7 +1438,8 @@ input[type="radio"].visually-hidden {
 
 .modal-map {
   position: absolute;
-  bottom: 545px;
+  z-index: 4;
+  bottom: 355px;
   left: 50%;
 
   display: none;
@@ -1454,6 +1455,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 200px;
   left: 50%;
+  z-index: 5;
 
   display: none;
   width: 620px;
