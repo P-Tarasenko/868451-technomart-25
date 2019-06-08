@@ -229,16 +229,19 @@
           ваши
           покупки приятными</p>
         <div class="offer-wrapper">
-          
+
+          <!-- <input class="visually-hidden delivery-input" type="radio" name="slide" id="delivery-input" checked>
+          <input class="visually-hidden warranty-input" type="radio" name="slide" id="warranty-input">
+          <input class="visually-hidden credit-input" type="radio" name="slide" id="credit-input"> -->
+
+          <div class="offer-list">
             <input class="visually-hidden delivery-input" type="radio" name="slide" id="delivery-input" checked>
+            <label class="offer-item delivery-label" for="delivery-input">Доставка</label>
             <input class="visually-hidden warranty-input" type="radio" name="slide" id="warranty-input">
+            <label class="offer-item warranty-label" for="warranty-input">Гарантия</label>
             <input class="visually-hidden credit-input" type="radio" name="slide" id="credit-input">
-          
-          <ul class="offer-list">
-            <li class="offer-item"><label class="delivery-label" for="delivery-input">Доставка</label></li>
-            <li class="offer-item"><label class="warranty-label" for="warranty-input">Гарантия</label></li>
-            <li class="offer-item"><label class="credit-label" for="credit-input">Кредит</label></li>
-          </ul>
+            <label class="offer-item credit-label" for="credit-input">Кредит</label>
+          </div>
           <div class="slides-wrapper">
             <div class="offer-slide offer-delivery">
               <h3>Доставка</h3>
