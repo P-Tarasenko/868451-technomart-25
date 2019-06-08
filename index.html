@@ -222,31 +222,49 @@
       </div>
     </section>
     <section class="offer">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, что бы сделать ваши
-        покупки приятными</p>
-      <ul class="offer-slider">
-        <li class="offer-slider__item"><button type="button">Доставка</button></li>
-        <li class="offer-slider__item"><button type="button">Гарантия</button></li>
-        <li class="offer-slider__item"><button type="button">Кредит</button></li>
-      </ul>
-      <div class="offer-delivery">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем,
-          поднимая его на ваш этаж!</p>
-      </div>
-      <div class="offer-warranty">
-        <h2>Гарантия</h2>
-        <p>Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его
-          возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж
-          восстановите как-нибудь сами.</p>
-        <!-- <p>Дом уж восстановите как-нибудь сами.</p> -->
-      </div>
-      <div class="offer-credit">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        <p><a href="#">Отправить заявку</a></p>
+      <div class="container">
+        <h2>Сервисы</h2>
+        <p class="offer-desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
+          сил, что бы сделать
+          ваши
+          покупки приятными</p>
+        <div class="offer-wrapper">
+          
+            <input class="visually-hidden delivery-input" type="radio" name="slide" id="delivery-input" checked>
+            <input class="visually-hidden warranty-input" type="radio" name="slide" id="warranty-input">
+            <input class="visually-hidden credit-input" type="radio" name="slide" id="credit-input">
+          
+          <ul class="offer-list">
+            <li class="offer-item"><label class="delivery-label" for="delivery-input">Доставка</label></li>
+            <li class="offer-item"><label class="warranty-label" for="warranty-input">Гарантия</label></li>
+            <li class="offer-item"><label class="credit-label" for="credit-input">Кредит</label></li>
+          </ul>
+          <div class="slides-wrapper">
+            <div class="offer-slide offer-delivery">
+              <h3>Доставка</h3>
+              <p class="offer-desc delivery-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно
+                бесплатно! Ведь мы неплохо
+                заработаем,
+                поднимая его на ваш этаж!</p>
+            </div>
+            <div class="offer-slide offer-warranty">
+              <h3>Гарантия</h3>
+              <p class="offer-desc warranty-desc">Если купленный у нас товар поломается или заискрит, а так же в случае
+                пожара, спровоцированного его
+                возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на
+                новый.<br>Дом
+                уж
+                восстановите как-нибудь сами.</p>
+            </div>
+            <div class="offer-slide offer-credit">
+              <h3>Кредит</h3>
+              <p class="offer-desc credit-desc">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
+                помощь.</p>
+              <p><a href="#">Отправить заявку</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <div class="about-us container">
