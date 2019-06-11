@@ -874,14 +874,16 @@ input[type="radio"].visually-hidden {
   height: 145px;
   margin-right: 20px;
   margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 
   background-color: white;
   border: 1px solid #eaeaea;
 }
 
-.brands-item a {
+/* .brands-item a {
   margin: auto;
-}
+} */
 
 .brands-item:nth-child(4n+4) {
   margin-right: 0;
