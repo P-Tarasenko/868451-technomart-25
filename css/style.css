@@ -1454,6 +1454,10 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
+.map-position {
+  position: absolute;
+}
+
 .modal-mail {
   position: absolute;
   bottom: 200px;
@@ -2571,6 +2575,11 @@ input[type="radio"].visually-hidden {
   height: 2px;
 
   background: #00ca74;
+}
+
+.close-map {
+  top: 8px;
+  left: 910px;  
 }
 
 .modal-show {
