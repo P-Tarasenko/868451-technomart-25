@@ -2594,3 +2594,7 @@ input[type="radio"].visually-hidden {
             transform: translateX(10px);
   }
 }
+
+.without-sale {
+  margin-top: 27px;
+}
