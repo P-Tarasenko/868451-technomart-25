@@ -19,7 +19,7 @@ if (document.querySelector(".modal-map")) {
   try {
     nameStorage = localStorage.getItem("userName");
     emailStorage = localStorage.getItem("userEmail");
-  } catch {
+  } catch (err) {
     storageSupport = false;
   }
 
