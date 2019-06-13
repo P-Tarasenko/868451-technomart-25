@@ -486,6 +486,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.29;
+  vertical-align: middle;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -1487,6 +1488,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 18px;
   line-height: 1;
+  vertical-align: middle;
   text-align: left;
   color: #000000;
 }
@@ -2386,6 +2388,8 @@ input[type="radio"].visually-hidden {
 .common-modal-button {
   display: inline-block;
   width: 220px;
+
+  vertical-align: middle;
 }
 
 .catalog-modal__bg {
